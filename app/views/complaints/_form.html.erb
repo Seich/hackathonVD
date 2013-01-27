@@ -1,19 +1,60 @@
-<%= simple_form_for(@complaint) do |f| %>
+<%= simple_form_for(@complaint, :html => { :class => 'form-horizontal' }) do |f| %>
   <%= f.error_notification %>
 
-  <div class="form-inputs">
-    <%= f.association :complaintType %>
-    <%= f.association :department %>
-    <%= f.association :municipality %>
-    <%= f.association :place %>
-    <%= f.association :institution %>
-    <%= f.input :description %>
-    <%= f.input :status %>
-    <%= f.input :incident_date %>
-    <%= f.input :first_hearing_date %>
-    <%= f.input :second_hearing_date %>
-    <%= f.input :sentencing_date %>
-    <%= f.input :observations %>
+  <div class="form-inputs" id="accordion">
+    <h3>Plaintiff</h3>
+    <div class="plaintiff">
+      <%= f.simple_fields_for :plaintiff do |p| %>
+        <%= p.input :averageIncome %>
+        <%= p.input :birthPlace %>
+        <%= p.input :birthday %>
+        <%= p.input :daughters %>
+        <%= p.input :handicap %>
+        <%= p.input :houseStatus %>
+        <%= p.input :identification %>
+        <%= p.input :incidents %>
+        <%= p.input :lastname %>
+        <%= p.input :name %>
+        <%= p.input :ocupation %>
+        <%= p.input :repeatOffender %>
+        <%= p.input :sons %>
+      <% end %>
+    </div>
+
+    <h3>Defendant</h3>
+    <div class="defendant">
+      <%= f.simple_fields_for :defendant do |p| %>
+        <%= p.input :averageIncome %>
+        <%= p.input :birthPlace %>
+        <%= p.input :birthday %>
+        <%= p.input :daughters %>
+        <%= p.input :handicap %>
+        <%= p.input :houseStatus %>
+        <%= p.input :identification %>
+        <%= p.input :incidents %>
+        <%= p.input :lastname %>
+        <%= p.input :name %>
+        <%= p.input :ocupation %>
+        <%= p.input :repeatOffender %>
+        <%= p.input :sons %>
+      <% end %>
+    </div>
+
+    <h3>Case</h3>
+    <div class="case">
+      <%= f.association :complaintType %>
+      <%= f.association :department %>
+      <%= f.association :municipality %>
+      <%= f.association :place %>
+      <%= f.association :institution %>
+      <%= f.input :description %>
+      <%= f.input :status %>
+      <%= f.input :incident_date %>
+      <%= f.input :first_hearing_date %>
+      <%= f.input :second_hearing_date %>
+      <%= f.input :sentencing_date %>
+      <%= f.input :observations %>
+    </div>
   </div>
 
   <div class="form-actions">

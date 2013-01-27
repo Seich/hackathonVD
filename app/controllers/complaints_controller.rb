@@ -25,6 +25,8 @@ class ComplaintsController < ApplicationController
   # GET /complaints/new.json
   def new
     @complaint = Complaint.new
+    @complaint.build_plaintiff
+    @complaint.build_defendant
 
     respond_to do |format|
       format.html # new.html.erb

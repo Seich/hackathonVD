@@ -7,6 +7,9 @@ class Complaint < ActiveRecord::Base
   has_one :plaintiff, :class_name => "Person"
   has_one :defendant, :class_name => "Person"
 
+  accepts_nested_attributes_for :plaintiff
+  accepts_nested_attributes_for :defendant
+
   attr_accessible :description, :first_hearing_date, :incident_date, :observations, 
                   :second_hearing_date, :sentencing_date, :status
 end
