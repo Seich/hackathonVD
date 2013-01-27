@@ -1,4 +1,6 @@
 Hackathonv2::Application.routes.draw do
+  get "graph/show"
+
   resources :races
 
 
