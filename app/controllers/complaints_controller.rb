@@ -2,11 +2,11 @@ class ComplaintsController < ApplicationController
   # GET /complaints
   # GET /complaints.json
   def index
-    @complaints = Complaint.all
+    @complaints = Complaint.scoped.limit(200)
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @complaints }
+      format.json { render json: @complaints, include: [:plaintiff, :defendant] }
     end
   end
 

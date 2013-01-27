@@ -8,6 +8,7 @@ group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'sextant'
+  gem 'ffaker'
 end 
 
 group :assets do
