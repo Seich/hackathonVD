@@ -1,0 +1,27 @@
+<%= simple_form_for(@person) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :schooling %>
+    <%= f.association :maritalStatus %>
+    <%= f.association :race %>
+    <%= f.association :complaint %>
+    <%= f.input :lastname %>
+    <%= f.input :houseStatus %>
+    <%= f.input :identification %>
+    <%= f.input :handicap %>
+    <%= f.input :birthday %>
+    <%= f.input :daughters %>
+    <%= f.input :sons %>
+    <%= f.input :incidents %>
+    <%= f.input :averageIncome %>
+    <%= f.input :birthPlace %>
+    <%= f.input :name %>
+    <%= f.input :ocupation %>
+    <%= f.input :repeatOffender %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

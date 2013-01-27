@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  complaintType: 
+  department: 
+  municipality: 
+  place: 
+  institution: 
+  description: MyText
+  status: MyString
+  incident_date: 2013-01-27
+  first_hearing_date: 2013-01-27
+  second_hearing_date: 2013-01-27
+  sentencing_date: 2013-01-27
+  observations: MyText
+
+two:
+  complaintType: 
+  department: 
+  municipality: 
+  place: 
+  institution: 
+  description: MyText
+  status: MyString
+  incident_date: 2013-01-27
+  first_hearing_date: 2013-01-27
+  second_hearing_date: 2013-01-27
+  sentencing_date: 2013-01-27
+  observations: MyText

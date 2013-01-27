@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  schooling: 
+  maritalStatus: 
+  race: 
+  complaint: 
+  lastname: MyString
+  houseStatus: MyString
+  identification: MyString
+  handicap: false
+  birthday: 2013-01-27
+  daughters: 1
+  sons: 1
+  incidents: 1
+  averageIncome: 1
+  birthPlace: MyString
+  name: MyString
+  ocupation: MyString
+  repeatOffender: MyString
+
+two:
+  schooling: 
+  maritalStatus: 
+  race: 
+  complaint: 
+  lastname: MyString
+  houseStatus: MyString
+  identification: MyString
+  handicap: false
+  birthday: 2013-01-27
+  daughters: 1
+  sons: 1
+  incidents: 1
+  averageIncome: 1
+  birthPlace: MyString
+  name: MyString
+  ocupation: MyString
+  repeatOffender: MyString

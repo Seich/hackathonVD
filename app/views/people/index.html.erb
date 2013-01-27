@@ -1,0 +1,55 @@
+<h1>Listing people</h1>
+
+<table>
+  <tr>
+    <th>Schooling</th>
+    <th>Maritalstatus</th>
+    <th>Race</th>
+    <th>Complaint</th>
+    <th>Lastname</th>
+    <th>Housestatus</th>
+    <th>Identification</th>
+    <th>Handicap</th>
+    <th>Birthday</th>
+    <th>Daughters</th>
+    <th>Sons</th>
+    <th>Incidents</th>
+    <th>Averageincome</th>
+    <th>Birthplace</th>
+    <th>Name</th>
+    <th>Ocupation</th>
+    <th>Repeatoffender</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @people.each do |person| %>
+  <tr>
+    <td><%= person.schooling %></td>
+    <td><%= person.maritalStatus %></td>
+    <td><%= person.race %></td>
+    <td><%= person.complaint %></td>
+    <td><%= person.lastname %></td>
+    <td><%= person.houseStatus %></td>
+    <td><%= person.identification %></td>
+    <td><%= person.handicap %></td>
+    <td><%= person.birthday %></td>
+    <td><%= person.daughters %></td>
+    <td><%= person.sons %></td>
+    <td><%= person.incidents %></td>
+    <td><%= person.averageIncome %></td>
+    <td><%= person.birthPlace %></td>
+    <td><%= person.name %></td>
+    <td><%= person.ocupation %></td>
+    <td><%= person.repeatOffender %></td>
+    <td><%= link_to 'Show', person %></td>
+    <td><%= link_to 'Edit', edit_person_path(person) %></td>
+    <td><%= link_to 'Destroy', person, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Person', new_person_path %>

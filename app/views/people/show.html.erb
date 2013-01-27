@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Schooling:</b>
+  <%= @person.schooling %>
+</p>
+
+<p>
+  <b>Maritalstatus:</b>
+  <%= @person.maritalStatus %>
+</p>
+
+<p>
+  <b>Race:</b>
+  <%= @person.race %>
+</p>
+
+<p>
+  <b>Complaint:</b>
+  <%= @person.complaint %>
+</p>
+
+<p>
+  <b>Lastname:</b>
+  <%= @person.lastname %>
+</p>
+
+<p>
+  <b>Housestatus:</b>
+  <%= @person.houseStatus %>
+</p>
+
+<p>
+  <b>Identification:</b>
+  <%= @person.identification %>
+</p>
+
+<p>
+  <b>Handicap:</b>
+  <%= @person.handicap %>
+</p>
+
+<p>
+  <b>Birthday:</b>
+  <%= @person.birthday %>
+</p>
+
+<p>
+  <b>Daughters:</b>
+  <%= @person.daughters %>
+</p>
+
+<p>
+  <b>Sons:</b>
+  <%= @person.sons %>
+</p>
+
+<p>
+  <b>Incidents:</b>
+  <%= @person.incidents %>
+</p>
+
+<p>
+  <b>Averageincome:</b>
+  <%= @person.averageIncome %>
+</p>
+
+<p>
+  <b>Birthplace:</b>
+  <%= @person.birthPlace %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @person.name %>
+</p>
+
+<p>
+  <b>Ocupation:</b>
+  <%= @person.ocupation %>
+</p>
+
+<p>
+  <b>Repeatoffender:</b>
+  <%= @person.repeatOffender %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

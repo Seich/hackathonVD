@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Complainttype:</b>
+  <%= @complaint.complaintType %>
+</p>
+
+<p>
+  <b>Department:</b>
+  <%= @complaint.department %>
+</p>
+
+<p>
+  <b>Municipality:</b>
+  <%= @complaint.municipality %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @complaint.place %>
+</p>
+
+<p>
+  <b>Institution:</b>
+  <%= @complaint.institution %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @complaint.description %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @complaint.status %>
+</p>
+
+<p>
+  <b>Incident date:</b>
+  <%= @complaint.incident_date %>
+</p>
+
+<p>
+  <b>First hearing date:</b>
+  <%= @complaint.first_hearing_date %>
+</p>
+
+<p>
+  <b>Second hearing date:</b>
+  <%= @complaint.second_hearing_date %>
+</p>
+
+<p>
+  <b>Sentencing date:</b>
+  <%= @complaint.sentencing_date %>
+</p>
+
+<p>
+  <b>Observations:</b>
+  <%= @complaint.observations %>
+</p>
+
+
+<%= link_to 'Edit', edit_complaint_path(@complaint) %> |
+<%= link_to 'Back', complaints_path %>

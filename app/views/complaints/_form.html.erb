@@ -1,0 +1,22 @@
+<%= simple_form_for(@complaint) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :complaintType %>
+    <%= f.association :department %>
+    <%= f.association :municipality %>
+    <%= f.association :place %>
+    <%= f.association :institution %>
+    <%= f.input :description %>
+    <%= f.input :status %>
+    <%= f.input :incident_date %>
+    <%= f.input :first_hearing_date %>
+    <%= f.input :second_hearing_date %>
+    <%= f.input :sentencing_date %>
+    <%= f.input :observations %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

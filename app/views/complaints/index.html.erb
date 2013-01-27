@@ -1,0 +1,45 @@
+<h1>Listing complaints</h1>
+
+<table>
+  <tr>
+    <th>Complainttype</th>
+    <th>Department</th>
+    <th>Municipality</th>
+    <th>Place</th>
+    <th>Institution</th>
+    <th>Description</th>
+    <th>Status</th>
+    <th>Incident date</th>
+    <th>First hearing date</th>
+    <th>Second hearing date</th>
+    <th>Sentencing date</th>
+    <th>Observations</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @complaints.each do |complaint| %>
+  <tr>
+    <td><%= complaint.complaintType %></td>
+    <td><%= complaint.department %></td>
+    <td><%= complaint.municipality %></td>
+    <td><%= complaint.place %></td>
+    <td><%= complaint.institution %></td>
+    <td><%= complaint.description %></td>
+    <td><%= complaint.status %></td>
+    <td><%= complaint.incident_date %></td>
+    <td><%= complaint.first_hearing_date %></td>
+    <td><%= complaint.second_hearing_date %></td>
+    <td><%= complaint.sentencing_date %></td>
+    <td><%= complaint.observations %></td>
+    <td><%= link_to 'Show', complaint %></td>
+    <td><%= link_to 'Edit', edit_complaint_path(complaint) %></td>
+    <td><%= link_to 'Destroy', complaint, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Complaint', new_complaint_path %>

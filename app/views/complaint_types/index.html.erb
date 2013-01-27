@@ -1,0 +1,23 @@
+<h1>Listing complaint_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @complaint_types.each do |complaint_type| %>
+  <tr>
+    <td><%= complaint_type.name %></td>
+    <td><%= link_to 'Show', complaint_type %></td>
+    <td><%= link_to 'Edit', edit_complaint_type_path(complaint_type) %></td>
+    <td><%= link_to 'Destroy', complaint_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Complaint type', new_complaint_type_path %>
